@@ -1,0 +1,208 @@
+{
+	"info": {
+		"_postman_id": "d320c298-b916-4c78-bdcd-5b10286393b4",
+		"name": "Medicaments",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getMedicaments",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjaGVjayI6dHJ1ZSwiaWF0IjoxNjE4ODA5NDgwLCJleHAiOjE2MTk0MTQyODB9.8xEhTKY70mRPhRSg-77_bOnEDuP0FUyqJclvqUGi3XM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/medicaments",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"medicaments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createMedicament",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjaGVjayI6dHJ1ZSwiaWF0IjoxNjE4ODA5NDgwLCJleHAiOjE2MTk0MTQyODB9.8xEhTKY70mRPhRSg-77_bOnEDuP0FUyqJclvqUGi3XM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\": 4,\r\n        \"name\": \"esssno\",\r\n        \"type\": \"dddss\",\r\n        \"location\": \"1\",\r\n        \"quantity\": 3,\r\n        \"cost\": 3,\r\n        \"date\": \"20210101\"\r\n    }"
+				},
+				"url": {
+					"raw": "http://localhost:3000/medicaments/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"medicaments",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getMedicamentById",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjaGVjayI6dHJ1ZSwiaWF0IjoxNjE4ODA5NDgwLCJleHAiOjE2MTk0MTQyODB9.8xEhTKY70mRPhRSg-77_bOnEDuP0FUyqJclvqUGi3XM",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/medicaments/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"medicaments",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateMedicament",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjaGVjayI6dHJ1ZSwiaWF0IjoxNjE4ODA5NDgwLCJleHAiOjE2MTk0MTQyODB9.8xEhTKY70mRPhRSg-77_bOnEDuP0FUyqJclvqUGi3XM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\": 31,\r\n        \"name\": \"\",\r\n        \"type\": \"\",\r\n        \"location\": \"\",\r\n        \"quantity\": \"d\",\r\n        \"cost\": \"d\",\r\n        \"date\": \"2d0210101\"\r\n    }"
+				},
+				"url": {
+					"raw": "http://localhost:3000/medicaments/update/31",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"medicaments",
+						"update",
+						"31"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteMedicament",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjaGVjayI6dHJ1ZSwiaWF0IjoxNjE4ODA5NDgwLCJleHAiOjE2MTk0MTQyODB9.8xEhTKY70mRPhRSg-77_bOnEDuP0FUyqJclvqUGi3XM",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/medicaments/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"medicaments",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "authMedicamentsAPI",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user\": \"test\",\r\n    \"password\": \"test\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/authenticate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"authenticate"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
